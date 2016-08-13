@@ -15,12 +15,12 @@
     criteria is "All" or criteria.toLowerCase() is @type      
 
   @fromHash: (data) ->
-  	animal = new @
-  	animal[key] = val for key, val of data
-  	animal
+    animal = new @
+    animal[key] = val for key, val of data
+    animal
 
   @loadSeedData: ->
-  	animalData = [
+    animalData = [
       name: "Kelsey"
       type: "dog"
       age: 2
@@ -83,7 +83,7 @@
       breed: "Breton"
       image: ""
       description: "The resident shop patriarch. Very calm and tolerates the antics of the other animals when they sneak into his pen."
-  	]
-	
-  	for animal in animalData
-  	  @fromHash animal
+    ]
+  
+    for animal in animalData
+      @fromHash animal

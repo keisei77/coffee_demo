@@ -13,9 +13,9 @@ class window.PetView extends View
     if showBehavior
       [sound, action] = @pet.behaviors()
       [behavior, cssClass] = if sound?
-  	    ["#{sound}!", "sound"]
+        ["#{sound}!", "sound"]
       else
-  	    [action, "action"]
+        [action, "action"]
 
       result += " <span class='#{cssClass}'>#{behavior.toLowerCase()}</span>"
     result
